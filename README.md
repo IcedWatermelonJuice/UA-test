@@ -1,2 +1,5 @@
 # UA-test
-测试解析UA
+* 测试解析UA
+* 基于jQuery
+* 在线使用地址1:dwatermelonjuice.github.io/UA-test/
+* 在线使用地址2:https://gem-ua.rth.app/
