@@ -1,0 +1,23 @@
+.hide{
+	display: none;
+}
+.ua-list{
+	display:inline-block;
+	margin-right: 10px;
+}
+.ua-title{
+	font-weight: bold;
+}
+#screen-detail{
+	display: inline-block;
+}
+h2{
+	color: red;
+	margin: 5px 0 10px 0;
+	display: inline-block;
+}
+h3{
+	color:black;
+	margin-bottom: 5px;
+	display: inline-block;
+}
