@@ -4,21 +4,52 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
 		<title>显示用户UA</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
 		<link rel="icon" type="image/x-icon" href="favicon.ico" />
 		<script src="js/jquery.js"></script>
+		<script src="js/UAParser.js"></script>
+		<script src="js/browser.js"></script>
+		<script src="js/parse.js"></script>
 		<script src="js/main.js"></script>
 	</head>
 	<body>
-		<div id="ua-box">
-			<h2 id="ua-title">您的UA字符串为：</h1>
-			<h3 id="ua-wait">正在解析UA字符串</h2>
-			<ul id="ua-detail" class="hide"></ul>
-		</div>
-		<div id="screen-box">
-			<h2 id="screen-title">您的屏幕分辨率为：</h1>
-			<h3 id="screen-wait">正在获取屏幕分辨率</h2>
-			<h3 id="screen-detail" class="hide"></h3>
+		<div class="main-box">
+			<h1 class="title-box">用户UA解析器</h1>
+			<div class="ua-box">
+				<input type="text" class="ua-text" />
+				<input type="button" class="ua-btn" value="解析" />
+			</div>
+			<table class="parse-box">
+				<tr>
+					<td class="parse-box-name" data-name="ua">完整UA</td>
+					<td class="parse-box-value" data-name="ua">正在获取</td>
+				</tr>
+				<tr>
+					<td class="parse-box-name" data-name="browser">设备信息</td>
+					<td class="parse-box-value" data-name="browser">正在获取</td>
+				</tr>
+				<tr>
+					<td class="parse-box-name" data-name="engine">渲染引擎</td>
+					<td class="parse-box-value" data-name="engine">正在获取</td>
+				</tr>
+				<tr>
+					<td class="parse-box-name" data-name="os">操作系统</td>
+					<td class="parse-box-value" data-name="os">正在获取</td>
+				</tr>
+				<tr>
+					<td class="parse-box-name" data-name="language">语言环境</td>
+					<td class="parse-box-value" data-name="language">正在获取</td>
+				</tr>
+				<tr>
+					<td class="parse-box-name" data-name="screen">屏幕分辨率</td>
+					<td class="parse-box-value" data-name="screen">正在获取</td>
+				</tr>
+				<tr>
+					<td class="parse-box-name" data-name="ip">本机IP地址</td>
+					<td class="parse-box-value" data-name="ip">正在获取</td>
+				</tr>
+			</table>
 		</div>
 	</body>
 </html>
