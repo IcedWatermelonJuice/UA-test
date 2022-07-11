@@ -106,18 +106,28 @@ body {
 	border-radius: 4px;
 }
 
-.markdown-btn,
+.markdown-btn {
+	width: calc(100% - 1rem);
+	padding: 0.2rem 0.5rem;
+}
+
+.markdown-btn[show] {
+	border-bottom: 1px solid var(--color-text);
+}
+
 .markdown-content {
 	width: calc(100% - 1rem);
-	margin: 0.2rem 0.5rem;
+	padding: 0.2rem 0.5rem;
+	overflow: hidden;
+	word-break: break-all;
 }
-.markdown-btn span,.markdown-btn svg{
+
+.markdown-btn span,
+.markdown-btn svg {
 	height: 2rem;
 	vertical-align: middle;
 }
-.markdown-btn[show]{
-	border-bottom: 1px solid var(--color-text);
-}
-.markdown-btn svg{
+
+.markdown-btn svg {
 	cursor: pointer;
 }
