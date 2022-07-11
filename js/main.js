@@ -9,6 +9,11 @@ $("body").ready(()=>{
 	$(".ua-btn").click(() => {
 		parseFn();
 	});
+	$(".ua-text").keyup((e)=>{
+		if(/enter/i.test(e.key)||e.keyCode===13){
+			$(".ua-btn").click();
+		}
+	})
 	parseFn();
 })
 
