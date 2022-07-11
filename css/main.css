@@ -97,3 +97,27 @@ body {
 .parse-box td {
 	width: 50%;
 }
+
+/* MD部分 */
+.markdown-box {
+	width: 100%;
+	margin: 0;
+	border: 1.5px solid var(--color-text);
+	border-radius: 4px;
+}
+
+.markdown-btn,
+.markdown-content {
+	width: calc(100% - 1rem);
+	margin: 0.2rem 0.5rem;
+}
+.markdown-btn span,.markdown-btn svg{
+	height: 2rem;
+	vertical-align: middle;
+}
+.markdown-btn[show]{
+	border-bottom: 1px solid var(--color-text);
+}
+.markdown-btn svg{
+	cursor: pointer;
+}
